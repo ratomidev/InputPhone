@@ -1,0 +1,32 @@
+select {
+
+	
+	
+	background-image: url( https://cdn.kcak11.com/CountryFlags/countries/tr.svg );
+	background-repeat: no-repeat;
+    height: 55px;
+    font-weight: bold;
+    border-radius: 10px;
+    
+	background-size: 50px 50px;
+    background-position: 3px;
+    width: 125px;
+    
+ }
+ input {
+    width: 250px;
+    height: 50px; 
+    margin-left:20px ;
+    border: rgb(144, 220, 144) solid 3px;
+    color:gray; 
+    border-radius: 10px;
+ }
+ input :focus {
+background-color: red;
+ }
+ option {
+    display: block; 
+    position: absolute;
+    text-align: end;
+   
+ }
