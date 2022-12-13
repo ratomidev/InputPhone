@@ -7,9 +7,8 @@ const PhoneInput = () => {
   const [iconBack, setIconBack] = useState("https://cdn.kcak11.com/CountryFlags/countries/tn.svg") 
 
 
-  function bb(id) {
-    console.log(id)
-    const element =   fileJson.find((item)=> item.isoCode === id )
+  function findElement(isoCode) {
+    const element =   fileJson.find((item)=> item.isoCode === isoCode )
     return element 
   }
   
@@ -19,9 +18,9 @@ const PhoneInput = () => {
       <select  value={country} style={{backgroundImage: `url(${iconBack})`}}  onChange={e =>
       
       { 
-        setCountry(e.target.value.toString())
+        setCountry(e.target.value.);
          console.log(e.target.value); 
-         let obj = bb(e.target.value);
+         let obj = findElement(e.target.value);
          setIconBack(obj.flag)
          setPhoneNumber(obj.dialCode) 
          }}>
